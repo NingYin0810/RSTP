@@ -1,5 +1,7 @@
 import cv2
 
+
+
 url = 'rtsp://localhost:8554/test'
 cap = cv2.VideoCapture(url)
 while (cap.isOpened()):
