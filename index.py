@@ -6,7 +6,7 @@ import sys
 class RTSCapture(cv2.VideoCapture):
     _cur_frame = None
     _reading = False
-    schemes = ["rtsp://","rtmp://"]
+    schemes = ["rtsp://"]
     @staticmethod
     def create(url, *schemes):
         rtscap = RTSCapture(url)
@@ -59,7 +59,7 @@ if __name__ == '__main__':
         if cv2.waitKey(100) & 0xFF == ord('q'):
             break
         if not ok:
-            continue
+            continue 
 
 
         # inhere
