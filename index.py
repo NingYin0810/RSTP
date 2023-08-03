@@ -4,7 +4,7 @@ def  get_img_from_camera_net(folder_path):
      cap  =  cv2.VideoCapture( "rtsp://localhost:8554/test" ) #获取网络摄像机
     
      i  =  1
-     while  i< 3 :
+     while  i< 1024 :
          ret, frame  =  cap.read()
          cv2.imshow( "capture" , frame)
          print  ( str (i))
