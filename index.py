@@ -1,7 +1,7 @@
 import cv2
 
 def  get_img_from_camera_net(folder_path):
-     cap  =  cv2.VideoCapture( "rtsp://admin:admin@10.80.11.11/ch1/stream1" ) #获取网络摄像机
+     cap  =  cv2.VideoCapture( "rtsp://localhost:8554/test" ) #获取网络摄像机
     
      i  =  1
      while  i< 3 :
@@ -17,5 +17,5 @@ def  get_img_from_camera_net(folder_path):
  
 # 测试
 if  __name__  ==  '__main__' :
-     folder_path  =  'D:\\Anacon\\'
+     folder_path  =  'E:\\cache\\'
      get_img_from_camera_net(folder_path)
