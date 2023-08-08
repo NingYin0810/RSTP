@@ -8,7 +8,7 @@ def  get_img_from_camera_net(folder_path):
          ret, frame  =  cap.read()
          cv2.imshow( "capture" , frame)
          print  ( str (i))
-         cv2.imwrite(folder_path  +  str (i)  +  '.jpg' , frame) # 存储为图像
+         cv2.imwrite(folder_path  +  str (i)  +  '.png' , frame, [cv2.IMWRITE_PNG_COMPRESSION, 100]) # 存储为图像
          if  cv2.waitKey( 1 ) &  0xFF  ==  ord ( 'q' ):
              break
          i  +=  1
