@@ -13,7 +13,7 @@ class Onvif_hik(object):
         self.username = username
         self.password = password
         zeep.xsd.simple.AnySimpleType.pythonvalue = zeep_pythonvalue
-        self.save_path = "./{}T{}.jpg".format(self.ip, str(time.time()))  # 截图保存路径
+        self.save_path = "./{}T{}.ong".format(self.ip, str(time.time()))  # 截图保存路径
 
     def content_cam(self):
         """
